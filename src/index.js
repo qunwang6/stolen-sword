@@ -11,7 +11,7 @@ function resize() {
   devicePixelRatio = window.devicePixelRatio;
   let vw = window.innerWidth;
   let vh = window.innerHeight;
-  if(vw < vh / ASPECT_RATIO) vh = vw * ASPECT_RATIO;
+  // if(vw < vh / ASPECT_RATIO) vh = vw * ASPECT_RATIO;
   if(vh < vw * ASPECT_RATIO) vw = vh / ASPECT_RATIO;
   canvas.style.width = Math.floor(vw);
   canvas.style.height = Math.floor(vh);
